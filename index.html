@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réussite Académie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="logo-icon">🎓</span>
+            <div>
+                <h2>RÉUSSITE ACADÉMIE</h2>
+                <p>Centre de cours privés</p>
+            </div>
+        </div>
+
+       <nav>
+        <button id="bouton-theme" type="button">🌙 Mode sombre</button>
+        <div id="date-heure">
+    Chargement de la date...
+</div>
+    <a href="#accueil">Accueil</a>
+
+    <a href="#formations">Formations</a>
+
+    <a href="#avantages">Pourquoi nous choisir ?</a>
+
+    <a href="#temoignages">Témoignages</a>
+<a href="#faq">FAQ</a>
+    <a href="#inscription">Inscription</a>
+
+    <a href="#contact">Contact</a>
+</nav>
+    </header>
+
+    
+<section id="accueil">
+
+    <div class="accueil-contenu">
+        <h1>Bienvenue à Réussite Académie</h1>
+
+        <h2>La réussite commence ici !</h2>
+
+        <p>
+            La réussite de chaque élève,
+            notre priorité.
+        </p>
+
+        <a href="#formations" class="bouton-accueil">
+            Découvrir nos formations
+        </a>
+
+        <a href="#inscription" class="bouton-inscription">
+            S'inscrire maintenant
+        </a>
+    </div>
+
+    <div class="accueil-image">
+        <img
+            src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=900"
+            alt="Des élèves dans une salle de classe">
+    </div>
+
+</section>
+<!-- SECTION STATISTIQUES -->
+
+<section id="statistiques">
+
+    <h2>Réussite Académie en chiffres</h2>
+
+    <div class="statistiques-container">
+
+        <div class="statistique">
+            <h3>4</h3>
+            <p>Formations proposées</p>
+        </div>
+
+        <div class="statistique">
+            <h3>5</h3>
+            <p>Matières enseignées</p>
+        </div>
+
+        <div class="statistique">
+            <h3>2</h3>
+            <p>Contacts WhatsApp</p>
+        </div>
+
+    </div>
+<div class="statistique">
+    <h3 id="compteur-inscriptions">0</h3>
+    <p>Demandes d'inscription</p>
+</div>
+</section>
+    <section id="formations">
+        <h2>Nos formations</h2>
+        <p>Nous accompagnons les apprenants vers la réussite.</p>
+
+        <div class="formations-container">
+
+            <div class="formation">
+                <h3>📚 Primaire</h3>
+                <p>Accompagnement scolaire des élèves du primaire.</p>
+            </div>
+
+            <div class="formation">
+                <h3>🎓 Collège</h3>
+                <p>Cours de soutien de la 6ème à la 3ème.</p>
+            </div>
+
+            <div class="formation">
+                <h3>🏫 Lycée</h3>
+                <p>Préparation aux examens et soutien scolaire.</p>
+            </div>
+
+            <div class="formation">
+                <h3>💻 Formation professionnelle</h3>
+                <p>Développement des compétences pratiques.</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- SECTION POURQUOI NOUS CHOISIR -->
+
+<section id="avantages">
+
+    <h2>Pourquoi choisir Réussite Académie ?</h2>
+
+    <p>Nous mettons tout en œuvre pour accompagner chaque apprenant vers la réussite.</p>
+
+    <div class="avantages-container">
+
+        <div class="avantage">
+            <h3>📚 Bon accompagnement</h3>
+            <p>Un accompagnement adapté au niveau de chaque élève.</p>
+        </div>
+
+        <div class="avantage">
+            <h3>🎯 Suivi personnalisé</h3>
+            <p>Un suivi régulier pour aider chaque apprenant à progresser.</p>
+        </div>
+
+        <div class="avantage">
+            <h3>🏆 Préparation aux examens</h3>
+            <p>Des révisions et des exercices pour mieux préparer les examens.</p>
+        </div>
+
+        <div class="avantage">
+            <h3>💻 Formation pratique</h3>
+            <p>Le développement des connaissances et des compétences pratiques.</p>
+        </div>
+
+    </div>
+
+</section>
+    <section id="inscription">
+        <h2>Inscription des élèves</h2>
+        <p>Remplissez les informations ci-dessous.</p>
+
+        <form id="form-inscription">
+
+            <label>Nom complet de l'élève :</label>
+            <input type="text" id="nom" required
+                   placeholder="Entrez le nom complet">
+
+            <br><br>
+
+            <label>Téléphone du parent :</label>
+            <input type="tel" id="telephone" required
+                   placeholder="Numéro de téléphone">
+
+            <br><br>
+
+            <label>Niveau d'étude :</label>
+            <select id="niveau" required>
+                <option value="">Choisir un niveau</option>
+                <option>Primaire</option>
+                <option>Collège</option>
+                <option>Lycée</option>
+                <option>Formation professionnelle</option>
+            </select>
+
+            <br><br>
+
+            <label>Matière souhaitée :</label>
+            <select id="matiere" required>
+                <option value="">Choisir une matière</option>
+                <option>Mathématiques</option>
+                <option>Physique-Chimie</option>
+                <option>Français</option>
+                <option>Anglais</option>
+                <option>Informatique</option>
+                <option>Autre</option>
+            </select>
+
+            <br><br>
+
+            <button type="submit">Envoyer mon inscription</button>
+<button type="button" id="imprimer-inscription">
+    🖨️ Imprimer mes informations
+</button>
+        </form>
+    </section>
+<!-- SECTION TEMOIGNAGES -->
+
+<section id="temoignages">
+
+    <h2>Les témoignages de nos apprenants</h2>
+
+    <p>Découvrez ce que pensent nos apprenants de Réussite Académie.</p>
+
+    <div class="temoignages-container">
+
+        <div class="temoignage">
+            <h3>👨‍🎓 Un élève</h3>
+            <p>« Grâce aux cours de soutien, j'ai amélioré mes connaissances et ma compréhension. »</p>
+        </div>
+
+        <div class="temoignage">
+            <h3>👩‍👦 Un parent</h3>
+            <p>« Nous apprécions l'accompagnement et le suivi scolaire proposés aux élèves. »</p>
+        </div>
+
+        <div class="temoignage">
+            <h3>🎓 Un apprenant</h3>
+            <p>« Les explications sont claires et les exercices m'aident à progresser. »</p>
+        </div>
+
+    </div>
+
+</section>
+<!-- SECTION QUESTIONS FREQUENTES -->
+
+<section id="faq">
+
+    <h2>Questions fréquemment posées</h2>
+
+    <p>Voici les réponses aux questions que vous pouvez vous poser.</p>
+
+    <div class="faq-container">
+
+        <details>
+            <summary>Comment inscrire mon enfant ?</summary>
+            <p>Remplissez notre formulaire d'inscription et envoyez votre demande.</p>
+        </details>
+
+        <details>
+            <summary>Quels niveaux acceptez-vous ?</summary>
+            <p>Nous accueillons les élèves du primaire, du collège et du lycée.</p>
+        </details>
+
+        <details>
+            <summary>Quelles matières enseignez-vous ?</summary>
+            <p>Nous proposons les mathématiques, le français, l'anglais, la physique-chimie et l'informatique.</p>
+        </details>
+
+        <details>
+            <summary>Comment vous contacter ?</summary>
+            <p>Vous pouvez nous contacter directement par WhatsApp.</p>
+        </details>
+
+    </div>
+
+</section><S></S>
+<!-- GALERIE PHOTOS -->
+
+<section id="galerie">
+
+    <h2>Notre galerie photos</h2>
+
+    <p>Découvrez quelques moments de la vie à Réussite Académie.</p>
+
+    <div class="galerie-container">
+
+        <div class="galerie-item">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600"
+                 alt="Salle de classe">
+            <h3>Nos salles de classe</h3>
+        </div>
+
+        <div class="galerie-item">
+            <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600"
+                 alt="Élèves en apprentissage">
+            <h3>Apprentissage</h3>
+        </div>
+
+        <div class="galerie-item">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600"
+                 alt="Cérémonie de réussite">
+            <h3>La réussite scolaire</h3>
+        </div>
+
+    </div>
+
+</section>
+    <section id="contact">
+        <h2>Contactez Réussite Académie</h2>
+        <p>Vous souhaitez inscrire votre enfant ? Contactez-nous.</p>
+
+        <p>Premier numéro : 98 90 94 19</p>
+        <a href="https://wa.me/22798909419" target="_blank">
+            <button type="button">WhatsApp : 98 90 94 19</button>
+        </a>
+
+        <p>Deuxième numéro : 94 54 69 38</p>
+        <a href="https://wa.me/22794546938" target="_blank">
+            <button type="button">WhatsApp : 94 54 69 38</button>
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 Réussite Académie - Tous droits réservés.</p>
+    </footer>
+<!-- BOUTON RETOUR EN HAUT -->
+<button id="retour-haut" title="Retour en haut">
+    ↑
+</button>
+<!-- BOUTON WHATSAPP FLOTTANT -->
+<a href="https://wa.me/22798909419"
+   class="whatsapp-flottant"
+   target="_blank"
+   title="Contactez-nous sur WhatsApp">
+
+    💬
+
+</a>
+    <script src="script.js"></script>
+
+</body>
+</html>
